@@ -2,7 +2,8 @@
 SQL to web application with inputs/ouputs.Easy to build ,integrate,customize your web application, just via SQL
 ## inspired by Oracle Application Express (Apex)
 
-#  主要技术栈
+# 企业APP开发者平台,仅用SQL语句即可发布数据操作WEB应用 -  An inner website as http://10.36.111.213/easypump
+## 主要技术栈
 
 1. .net WebForms/MVC/WEBAPI hybrids
 2. 数据库智能:引用对应数据库的动态SQL分析包.
