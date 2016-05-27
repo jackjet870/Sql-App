@@ -2,7 +2,7 @@
 SQL to web application with inputs/ouputs.Easy to build ,integrate,customize your web application, just via SQL
 ## inspired by Oracle Application Express (Apex)
 
-# 企业APP开发者平台,仅用SQL语句即可发布数据操作WEB应用 -  An inner website as http://10.36.111.213/easypump
+# 企业APP开发者平台,仅用SQL语句即可发布数据操作WEB应用
 ## 主要技术栈
 
 1. .net WebForms/MVC/WEBAPI hybrids
@@ -15,7 +15,8 @@ MSSQL则用到了EXECUTE 和 SP_EXECUTESQL
    angularjs + ui-state + restangular
 
 # 应用适宜范围
-  小型WEB应用:数据查阅,数据操控类应用,企业生产维护外挂等.
+  小型WEB应用:数据查阅,数据操控类应用,企业生产维护外挂等.<br>
+  An inner website as http://10.36.111.213/easypump
 <DIV class=gut style="LETTER-SPACING: 1pt; LINE-HEIGHT: 2"><H2>[原创]极速开发!! 企业APP开发者平台,只用会写SQL语句可以发布数据操作类WEB应用,开发就这么简单! !</H2>
 <DIV style="LETTER-SPACING: 1pt; LINE-HEIGHT: 2">
 <H2>
