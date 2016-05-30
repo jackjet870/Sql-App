@@ -45,9 +45,9 @@ BEGIN
     LOOP
       dbms_output.get_line(catchstring, vret);
       IF vret = 0 THEN
-        ---捕获成功
+        ---captured
         IF out_msg IS NULL THEN
-          ---第一次捕获
+          ---easlist capture
           out_msg := catchstring;
         ELSE
           out_msg := out_msg || chr(10) || catchstring;
