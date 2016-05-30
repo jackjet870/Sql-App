@@ -1,14 +1,12 @@
 CREATE OR REPLACE PROCEDURE WXHP_do_sql_Block(sql_text     VARCHAR2, --paramed raw sql
                                               ip_bind_vars VARCHAR2, --json-formatted params
                                               out_msg  out VARCHAR2)
----÷¥––DML,DDL
+---ÊâßË°åDML,DDL
  IS
   source_cursor  INTEGER;
   rows_processed INTEGER;
   bind_vars      json;
 BEGIN
- /* out_msg:='≥…π¶!';
-  return;*/
   source_cursor := dbms_sql.open_cursor;
   --    sql_text:='truncate table ns_resource_state';
   dbms_sql.parse(source_cursor, replace(sql_text,chr(13)), dbms_sql.v7);
@@ -47,9 +45,9 @@ BEGIN
     LOOP
       dbms_output.get_line(catchstring, vret);
       IF vret = 0 THEN
-        ---≤∂ªÒ≥…π¶
+        ---ÊçïËé∑ÊàêÂäü
         IF out_msg IS NULL THEN
-          ---µ⁄“ª¥Œ≤∂ªÒ
+          ---Á¨¨‰∏ÄÊ¨°ÊçïËé∑
           out_msg := catchstring;
         ELSE
           out_msg := out_msg || chr(10) || catchstring;
@@ -61,7 +59,7 @@ BEGIN
   ------------end of run! DBMS_OUTPUT.PUT_LINE();
   dbms_sql.close_cursor(source_cursor);
   if(trim(out_msg) is null )then
-   out_msg:='”∞œÏ–– ˝:'||rows_processed;
+   out_msg:='row(s) effected:'||rows_processed;
   end if;
 EXCEPTION
   WHEN OTHERS THEN
